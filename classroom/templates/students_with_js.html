@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}Students{% endblock %}
+{% block content %}
+
+<h1>Student List (With JavaScript)</h1>
+<ul class="list-group students-list">
+</ul>
+
+{% endblock %}
+
+{% block scripts %}<script src='{% static "js/students.js" %}'></script>{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+{% load static %}
+{% block title %}Students{% endblock %}
+{% block content %}
+
+<h1>Student List (Without JavaScript)</h1>
+<ul class="list-group students-list">
+    {% for student in students %}
+    <li class="list-group-item">{{ student.last_name }}, {{student.first_name}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
